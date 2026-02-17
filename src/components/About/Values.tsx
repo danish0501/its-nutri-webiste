@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Leaf, Heart, ShieldCheck, Award, ChevronRight } from "lucide-react";
+import { Leaf, Heart, ShieldCheck, Award } from "lucide-react";
 
 const values = [
     {
