@@ -60,8 +60,8 @@ const Navbar = () => {
 
         {/* Actions */}
         <div className="flex items-center gap-2 sm:gap-3">
-          <button
-            onClick={() => setIsWishlistOpen(true)}
+          <Link
+            to="/wishlist"
             className="relative p-2.5 rounded-full hover:bg-secondary transition-colors"
             aria-label="Wishlist"
           >
@@ -71,7 +71,7 @@ const Navbar = () => {
                 {wishCount}
               </span>
             )}
-          </button>
+          </Link>
           <button
             onClick={() => setIsCartOpen(true)}
             className="relative p-2.5 rounded-full hover:bg-secondary transition-colors"
