@@ -5,11 +5,12 @@ import QuickViewModal from "@/components/QuickViewModal";
 import { Product } from "@/data/products";
 
 const Products = () => {
+  
   const [quickView, setQuickView] = useState<Product | null>(null);
 
   return (
     <div className="min-h-screen pt-24">
-      <section className="section-padding pt-8">
+      <section className="section-padding pt-0 pb-20">
         <div className="container-narrow">
           <ProductHero />
           <ProductGrid onQuickView={setQuickView} />
