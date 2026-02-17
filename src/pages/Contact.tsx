@@ -1,6 +1,7 @@
 import ContactForm from "@/components/Contact/ContactForm";
 import ContactHero from "@/components/Contact/ContactHero";
 import ContactInfo from "@/components/Contact/ContactInfo";
+import ContactMap from "@/components/Contact/ContactMap";
 import { motion } from "framer-motion";
 
 const Contact = () => {
@@ -46,6 +47,8 @@ const Contact = () => {
           </motion.div>
         </div>
       </section>
+
+      <ContactMap />
     </div>
   );
 };
