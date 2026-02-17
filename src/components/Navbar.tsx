@@ -72,8 +72,8 @@ const Navbar = () => {
               </span>
             )}
           </Link>
-          <button
-            onClick={() => setIsCartOpen(true)}
+          <Link
+            to="/cart"
             className="relative p-2.5 rounded-full hover:bg-secondary transition-colors"
             aria-label="Cart"
           >
@@ -83,7 +83,7 @@ const Navbar = () => {
                 {cartCount}
               </span>
             )}
-          </button>
+          </Link>
           <Link
             to="/auth"
             className="hidden sm:inline-flex items-center gap-2 px-6 py-2 rounded-full bg-primary text-primary-foreground text-lg font-medium hover:opacity-90 transition-opacity"

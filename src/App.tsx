@@ -7,8 +7,8 @@ import { CartProvider } from "@/context/CartContext";
 import { WishlistProvider } from "@/context/WishlistContext";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import CartDrawer from "@/components/CartDrawer";
 import Wishlist from "./pages/Wishlist";
+import Cart from "./pages/Cart";
 import Index from "./pages/Index";
 import Products from "./pages/Products";
 import About from "./pages/About";
@@ -27,7 +27,6 @@ const App = () => (
         <CartProvider>
           <WishlistProvider>
             <Navbar />
-            <CartDrawer />
             <main>
               <Routes>
                 <Route path="/" element={<Index />} />
@@ -35,6 +34,7 @@ const App = () => (
                 <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/wishlist" element={<Wishlist />} />
+                <Route path="/cart" element={<Cart />} />
                 <Route path="/auth" element={<Auth />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>

@@ -116,16 +116,6 @@ const Wishlist = () => {
                         ))}
                     </div>
                 )}
-
-                <div className="mt-16 text-center">
-                    <Link
-                        to="/products"
-                        className="inline-flex items-center gap-2 text-muted-foreground hover:text-accent transition-colors font-medium"
-                    >
-                        <ArrowLeft className="h-4 w-4" />
-                        Back to all products
-                    </Link>
-                </div>
             </div>
         </div>
     );
