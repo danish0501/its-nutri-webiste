@@ -6,6 +6,7 @@ import Bestsellers from "@/components/Home/Bestsellers";
 import CTA from "@/components/CTA";
 import QuickViewModal from "@/components/QuickViewModal";
 import { Product } from "@/data/products";
+import Comparison from "@/components/Home/Comparison";
 
 const Index = () => {
 
@@ -17,6 +18,7 @@ const Index = () => {
       <BrandValues />
       <Bestsellers onQuickView={setQuickView} />
       <IngredientsStory />
+      <Comparison />
       <CTA />
       <QuickViewModal product={quickView} onClose={() => setQuickView(null)} />
     </div>

@@ -1,21 +1,8 @@
 import { Link } from "react-router-dom";
-import {
-  Leaf,
-  Instagram,
-  Facebook,
-  Mail,
-  Phone,
-  MapPin,
-  ArrowUp,
-  Youtube
-} from "lucide-react";
+import { Leaf, Instagram, Facebook, Mail, Phone, MapPin, Youtube } from "lucide-react";
 import { motion } from "framer-motion";
-import { toast } from "sonner";
 
 const Footer = () => {
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
 
   const containerVariants = {
     hidden: { opacity: 0, y: 20 },
